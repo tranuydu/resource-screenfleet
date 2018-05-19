@@ -16,8 +16,6 @@ const router = new VueRouter({
   mode: 'history'
 })
 
-axios.defaults.baseURL = 'http://localhost:8100/resource-media'
-
 new Vue({
   el: '#app',
   router,

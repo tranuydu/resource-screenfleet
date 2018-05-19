@@ -71,7 +71,7 @@
           path: this.path,
           mediaType: this.mediaType
         }
-        axios.post('/', formData).then(res => {
+        axios.post('http://localhost:8100/resource-media', formData).then(res => {
           console.log(res)
         }).catch(err => {
           console.log(err)
@@ -79,7 +79,7 @@
       }
     },
     created() {
-      axios.get('/all').then(res => {
+      axios.get('http://localhost:8100/resource-media/all').then(res => {
         //console.log('Receive ', res)
         const data = res.data
         const receiveMedia = []
